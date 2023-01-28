@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <body align="center" bgcolor="brown">
+        <h1>Login Details</h1>
+        <form onsubmit="validation()">
+            <table border="3px" align="center" cellpadding="7px">
+           <tr>
+            <td> 
+                <input type="text" name="username" id="username" placeholder="Username"><br><br>
+            </td>
+           </tr>
+           <tr>
+            <td>
+                <input type="password" name="password" id="password" placeholder="password">
+
+            </td>
+           </tr>
+           <tr>
+            <td>
+                <input type="submit" name="login" >
+            </td>
+           </tr>
+        </table>
+        </form>
+        <script>
+            function validation(){
+                var un=document.getElementById('username').value;
+                var ps=document.getElementById('password').value;
+                if (un == "Dhoni" && ps == "Dhoni@123"){
+                    window.alert("Login Successful");
+                }
+                else{
+                    window.alert("Login Failed");
+                }
+            }
+        </script>
+    </body>
+</html>
